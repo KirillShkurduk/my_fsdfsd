@@ -1,0 +1,123 @@
+    * {
+      box-sizing: border-box;
+    }
+
+
+body {
+      font-family: 'Inter', sans-serif;
+      background-color: rgb(250, 248, 245);
+            color: rgb(60, 60, 60);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+
+    }
+    .container {
+      max-width: 1300px;
+      margin: auto;
+      padding: 20px;
+    }
+    .button {
+      background-color: rgb(133, 140, 121);
+      color: white;
+      padding: 15px;
+      margin: 10px auto;
+      display: block;
+      width: 750px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 0px;
+    }
+        .card {
+      width: 360px;
+      height: 300px;
+      background-color: white;
+      border-radius: 0px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+    .card img {
+      width: 360px;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 10px 16px;
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 9px;
+    }
+
+    .card-price {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .site-footer {
+  background-color: rgb(133, 140, 121);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  padding: 20px; 
+  text-align: center;
+}
+
+    @media (max-width: 768px) {
+      .card {
+        width: 100%;
+      }
+       body {
+         width: 100%;
+        height: auto;
+      }
+      .product img {
+        width: 100%;
+        height: auto;
+      }
+      .banner-img {
+        width: 100% !important;
+        height: auto !important;
+      }
+       .button {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+
+    .card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .card-wrapper {
+    flex-direction: column;
+    gap: 10px; 
+    align-items: center;
+  }
+
+  .card {
+    width: 100%; 
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .banner-img {
+    width: 100%;
+    height: auto;
+  }
+}
