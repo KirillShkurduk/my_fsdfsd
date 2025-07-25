@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Индивидуальная терапия</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #000;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .product-image img {
+      max-width: 800px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .product-details {
+      max-width: 400px;
+      flex: 1;
+    }
+
+    .product-details h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .product-details .price {
+      font-size: 22px;
+      margin-bottom: 25px;
+    }
+    .txt {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+
+    
+
+    .buy-button {
+      background-color: rgb(133, 140, 121);
+      color: white;
+      padding: 15px;
+      margin: 10px auto;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      font-weight: bold;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .buy-button:hover {
+      background-color: #8b3c3c;
+    }
+
+       .site-footer {
+  color: rgb(133, 140, 121);
+  text-align: center;
+  padding: 70px; 
+  text-align: center;
+}
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+      }
+
+      .product-image,
+      .product-details {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .product-details h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .product-details .price {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .buy-button {
+        border-radius: 0; /* убираем скругления */
+        max-width: none; /* убираем ограничение */
+        width: 100%;     /* растягиваем */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .product-details h1 {
+        font-size: 22px;
+      }
+
+      .product-details .price {
+        font-size: 18px;
+      }
+
+      .buy-button {
+        font-size: 14px;
+        padding: 12px;
+      }
+      .txt {
+      font-size: 17px;
+      text-align: center;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="product-image">
+      <img src="img/IMG_0962.PNG" alt="Индивидуальная терапия">
+    </div>
+    <div class="product-details">
+      <h1>Индивидуальная терапия</h1>
+      <p class="price">Онлайн | 50 мин | 40€</p>
+      <p class="txt">Когда сложно, тревожно и невыносимо.
+Помогаю пройти через кризис, восстановиться и почувствовать опору внутри. Работаю с тревожностью, выгоранием и самооценкой.</p>
+      <a class="buy-button" href="usl.html" title="Стоимость, формат, отмена">Условия и договоренности</a>
+      <a class="buy-button" href="" title="Оплата">Оплата</a> 
+      
+    </div>
+  </div>
+    <footer class="site-footer">
+  <div style="font-size: 24px;">
+    <i class="fab fa-cc-visa" style="margin: 0 10px;"></i>
+    <i class="fab fa-cc-mastercard" style="margin: 0 10px;"></i>
+    <i class="fab fa-cc-paypal" style="margin: 0 10px;"></i>
+    <i class="fab fa-cc-amex" style="margin: 0 10px;"></i>
+    <i class="fab fa-cc-apple-pay" style="margin: 0 10px;"></i>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </div>
+</body>
+</html>
