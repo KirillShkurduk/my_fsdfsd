@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дипломы и сертификаты</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+                  url('img/photo_2025-07-25_00-52-06.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(250, 248, 245, 1);
+      box-shadow: 0 0 15px rgb(133, 140, 121);
+      border-radius: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2em;
+      color: rgb(60, 60, 60);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+      gap: 25px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        background-attachment: scroll;
+      }
+
+      .container {
+        padding: 20px;
+        margin: 20px 10px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Дипломы и сертификаты</h1>
+    <div class="gallery">
+      <img src="dipom\image0.jpeg" alt="Диплом 1">
+      <img src="dipom\image2.jpeg" alt="Диплом 2">
+      <img src="dipom\IMG_1225.jpg" alt="Диплом 3">
+      <img src="dipom\IMG_0801.jpg" alt="Диплом 4">
+      <img src="dipom\IMG_1909.jpeg" alt="Диплом 5">
+      <img src="dipom\image3.jpeg" alt="Диплом 6">
+      <img src="dipom\IMG_1224.jpg" alt="Диплом 7">
+      <img src="dipom\Unknown-1.jpeg" alt="Диплом 8">
+    </div>
+  </div>
+</body>
+</html>
